@@ -1,6 +1,6 @@
 int Redled=8;
 int Greenled=9;
-int sensor;
+int sensor=7;
 int value;
 
 void setup() {
@@ -16,7 +16,7 @@ void loop() {
   {
     digitalWrite(Greenled,HIGH);
     delay(1000);
-    diitalWrite(Greenled,LOW);
+    digitalWrite(Greenled,LOW);
     Serial.println(value);
   }
   else
